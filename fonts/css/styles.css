@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 10%;
+    background-color: #920092;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s;
+}
+
+.nav__links li a:hover {
+    color: #ffbcff;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: rgb(255, 178, 243);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #ff36ff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10%; /* Adjust padding as needed */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 220px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center social links */
+    gap: 20px; /* Space between icons */
+    margin-top: 15px; /* Space above the icons */
+}
+
+.social-links a {
+    color: #920092; /* Default color */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-links a:hover {
+    color: #ff36ff; /* Color on hover */
+}
+
+.info {
+    margin-top: 20px; /* Space between social links and info */
+    font-size: 16px;
+    color: #fff;
+    background-color: #920092;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Max width */
+}
+
+.skills {
+    margin-top: 20px; /* Space between info and skills */
+}
+
+.skills ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Reduced space between icons */
+}
+
+.skills li {
+    width: calc(25% - 10px); /* Adjust to fit 4 columns */
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+
+.skills i {
+    font-size: 24px; /* Icon size */
+    margin-right: 5px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+    color: #920092;
+}
+
+.skills i:hover {
+    color: #ff36ff; /* Color on hover */
+}

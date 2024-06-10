@@ -63,7 +63,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 10%; /* Adjust padding as needed */
+    padding: 20px 10%;
 }
 
 .profile {
@@ -73,67 +73,67 @@ main {
 }
 
 .profile-image {
-    width: 220px; /* Set the width of the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 220px;
+    height: auto;
     border-radius: 50%;
 }
 
 .social-links {
     display: flex;
-    justify-content: center; /* Center social links */
-    gap: 20px; /* Space between icons */
-    margin-top: 15px; /* Space above the icons */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
 }
 
 .social-links a {
-    color: #920092; /* Default color */
-    font-size: 24px; /* Icon size */
-    transition: color 0.3s; /* Smooth color transition */
+    color: #920092;
+    font-size: 24px;
+    transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #ff36ff; /* Color on hover */
+    color: #ff36ff;
 }
 
 .info {
-    margin-top: 20px; /* Space between social links and info */
+    margin-top: 20px;
     font-size: 16px;
     color: #fff;
     background-color: #920092;
     padding: 15px 20px;
     border-radius: 8px;
     text-align: center;
-    width: 80%; /* Adjust width as needed */
-    max-width: 600px; /* Max width */
+    width: 80%;
+    max-width: 600px;
 }
 
 .skills {
-    margin-top: 20px; /* Space between info and skills */
+    margin-top: 20px;
 }
 
 .skills ul {
-    list-style: none; /* Remove list bullets */
+    list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Reduced space between icons */
+    gap: 10px;
 }
 
 .skills li {
-    width: calc(25% - 10px); /* Adjust to fit 4 columns */
+    width: calc(25% - 10px);
     text-align: center;
     font-size: 16px;
     color: #000;
 }
 
 .skills i {
-    font-size: 24px; /* Icon size */
-    margin-right: 5px; /* Space between icon and text */
-    vertical-align: middle; /* Align icon with text */
+    font-size: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
     color: #920092;
 }
 
 .skills i:hover {
-    color: #ff36ff; /* Color on hover */
+    color: #ff36ff;
 }

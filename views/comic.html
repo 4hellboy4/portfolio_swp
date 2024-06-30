@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../fonts/css/styles.css">
+    <link rel="stylesheet" href="../fonts/css/cosmic.css">
 </head>
 <body>
     <header>
@@ -14,23 +14,30 @@
             <ul class="nav__links">
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="comic.html">Comic</a></li>
+                <li><a href="#">Comic</a></li>
             </ul>
         </nav>
         <a href="../index.html" class="cta">Home</a>
     </header>
 
     <main>
-        <div class="coming-soon">
-            <h1>Projects Section Coming Soon!</h1>
-            <p>We're working on showcasing some amazing projects here. Stay tuned!</p>
+        <form id="email-form">
+            <label>Email: <input type="email" id="email-form-input" name="email-form" placeholder="Enter your email"></label>
+        </form>
+        <button id="XKCD-id-fetch-btn">Fetch ID</button>  
+        
+        <div class="info">
+            <p>Your token is: <span id="xkcd-token"></span></p>
+            <p>Comic Title: <span id="API-info"></span></p>
+            <p>Publication Date: <span id="publication-date"></span></p>
         </div>
+        <img id="comic-img" alt="Comic image will appear here" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
     </main>
-
 
     <footer class="footer">
         &copy; 2024 Portfolio
     </footer>
-    
+
+    <script src="../scripts/script_page.js"></script>
 </body>
 </html>

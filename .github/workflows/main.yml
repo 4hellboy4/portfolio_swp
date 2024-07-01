@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Replace with your main branch name
 
 jobs:
   deploy:
@@ -12,14 +12,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install dependencies and build
-        run: |
-          npm install
-          npm run build
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install  # Replace with your dependency installation command
+
+      - name: Build
+        run: npm run build  # Replace with your build command
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist
+          ACCESS_TOKEN: ${{ secrets.GH_PAT }}  # GitHub Personal Access Token
+          BRANCH: gh-pages  # Branch to deploy to (usually gh-pages)
+          FOLDER: dist  # Replace with your build output folder
